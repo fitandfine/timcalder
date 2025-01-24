@@ -39,6 +39,12 @@
     h2.subhead {
       font-size: 1.2rem;
       color: #ffd600;
+     // margin: 10px 0 30px;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    }
+    h3.subhead{
+      font-size: 1rem;
+      color: #ffd600;
       margin: 10px 0 30px;
       text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
     }
@@ -70,11 +76,18 @@
 
     /* Dynamic Phrase (longThankYouPhrases) */
     .dynamic-phrase {
-      font-size: 1.2em;
-      color: #b5c3f7;
-      margin: 20px auto;
-      max-width: 600px;
-    }
+  font-size: 1.2em;
+  color: #b5c3f7;
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: center;
+  line-height: 1.5em; /* Line spacing for readability */
+  height: 3em; /* Fixed height to fit two lines */
+  overflow: hidden; /* Prevent overflowing text */
+  display: flex; /* Center-align the text vertically */
+  align-items: center;
+  justify-content: center;
+}
 
     /* Intro Text */
     .intro-text {
@@ -258,71 +271,16 @@
      * Long & Short Thank You Phrases
      ***************************************************************/
     const longThankYouPhrases = [
-      "Thank you for buying me lunch!",
-      "Thanks for the coffee!",
-      "You just bought me dinner!",
-      "Thanks for the extra strings!",
-      "Appreciate the drinks!",
-      "Thanks for the support!",
-      "You made my day brighter!",
-      "Cheers to your generosity!",
-      "Grateful for your kindness!",
-      "You're awesome!",
-      "Music is better with you!",
-      "Thanks for the help!",
-      "Thanks for fueling my music!",
-      "Much appreciated!",
-      "You're a star!",
-      "Thanks for the energy boost!",
-      "You rock!",
-      "Your support means the world!",
-      "Thanks for the motivation!",
-      "Your donation keeps the music alive!",
-      "Thank you for your incredible generosity and thoughtfulness!",
-      "Your kindness is like a melody that lifts my spirits every time!",
-      "Thank you for believing in my music and helping me keep the rhythm going!",
-      "I'm deeply grateful for your support and encouragement – it means everything!",
-      "Thanks for helping me hit all the right notes with your generous donation!",
-      "Your kindness helps keep the beat alive and the music flowing – thank you!",
-      "Thank you for being the harmony to my melody and supporting my passion!",
-      "Your generosity strikes a chord with me – thank you so much!",
-      "Thank you for helping me keep the music alive and spreading joy through every note!",
-      "Your support is the perfect accompaniment to my musical journey – thank you!",
-      "Thanks for helping me tune my dreams into reality with your kindness!",
-      "Your support is the rhythm that drives my passion – thank you!",
-      "Thank you for your thoughtful donation – it’s like a beautiful chord that resonates deeply!",
-      "Your generosity is a sweet symphony that I am incredibly grateful for!",
-      "Thanks for making my musical journey a little bit brighter with your support!",
-      "Your kindness is music to my ears – thank you for your amazing support!",
-      "Thank you for keeping the music alive with your wonderful generosity!",
-      "Your support is the melody that inspires me every day – thank you!",
-      "Thank you for being a part of my musical story and supporting my passion!",
-      "Your donation is a high note in the song of my life – thank you!",
-      "Thank you for your unwavering support – it helps me keep playing from the heart!",
-      "Your kindness adds harmony to my music – thank you so much!",
-      "Thank you for your generous donation – it’s a powerful chord that resonates deeply!",
-      "Your support helps me keep the beat going – thank you for your kindness!",
-      "Thank you for being the rhythm that keeps my music alive – your support is invaluable!",
-      "Your generosity helps me create beautiful music – thank you from the bottom of my heart!",
-      "Thank you for your support – it's the melody that makes my music soar!",
-      "Your kindness keeps my music playing and my heart singing – thank you!",
-      "Thank you for being the harmony to my song and supporting my musical journey!",
-      "Your donation is like a perfect note that adds beauty to my music – thank you!",
-      "Thank you for helping me keep the rhythm of my dreams alive with your generosity!",
-      "Your support is the perfect accompaniment to my music – thank you for everything!",
-      "Thank you for believing in my music and helping me keep the beat alive!",
-      "Your generosity strikes a chord in my heart – thank you so much for your support!",
-      "Thank you for helping me create beautiful music with your incredible support!",
-      "Your kindness helps me keep the melody alive – thank you for your support!",
-      "Thank you for being a part of my musical journey and supporting my passion!",
-      "Your donation is a beautiful harmony in the song of my life – thank you!",
-      "Thank you for your support – it helps me keep playing from the heart every day!",
-      "Your kindness adds rhythm to my music – thank you so much for your support!",
-      "Thanks a million for your generosity!",
-      "Couldn’t do it without you!",
-      "You’re fab!",
-      "Immensely thankful!",
-      "Bless you!",
+    "Your support is invaluable",
+    "You've made my day brighter",
+    "Cheers for listening",
+    "Grateful for your kindness",
+    "Your donation helps keep music alive",
+    "Thank you for your incredible generosity",
+    "Thanks for helping to keep the rhythm going",
+    "Thanks for fueling my music",
+    "Much appreciated",
+    "Thanks for your thoughtful donation",
     ];
 
     const shortThankYouPhrases = [
@@ -447,7 +405,8 @@
 <body>
   <!-- HEADLINE -->
   <h1>The Man of a Thousand Songs!</h1>
-  <h2 class="subhead">Producer | Performer <br> Canary Studio Central Auckland</h2>
+  <h2 class="subhead">Producer / Performer </h2>
+  <h3 class ="subhead">Canary Studio Central Auckland</h3>
 
   <!-- Artist Photo -->
   <div class="artist-photo-container">
@@ -498,10 +457,14 @@
       <img src="qr.png" alt="QR Code for Payment" />
     </div>
   </div>
+  <!--Logo Display-->
+  <div class = "logo">
+  <img src="logo.jpeg" alt="Logo" class="footer-logo"/>
+</div>
 
   <!-- Footer -->
   <div class="footer">
-    <img src="logo.jpeg" alt="Logo" class="footer-logo"/>
+   
     <p>Built with love by 
       <a href="https://fitandfine.github.io/anup/" target="_blank">Anup</a>
     </p>
